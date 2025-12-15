@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+<h1>Галерея</h1>
+<img src="{{ url_for('static', filename='image/Дарт Вейдер.jfif') }}" alt="Логотип">
+<img src="{{ url_for('static', filename='image/Люк Скайуокер.jfif') }}" alt="Пример">
+<p>Здесь можно показывать картинки из папки static/image.</p>
+{% endblock %}
